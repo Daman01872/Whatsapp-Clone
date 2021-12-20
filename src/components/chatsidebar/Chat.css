@@ -1,0 +1,102 @@
+.chat {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat .chat__header {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-bottom:  1px solid lightgray;
+}
+
+.chat__headerInfo {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.chat__headerInfo h3 {
+    font-size: 17px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.2em;
+}
+
+.chat__headerInfo p {
+    font-size: 13px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.chat__headerRight svg {
+    font-size: 18px;
+}
+
+/* --------> Css of Chatting body section <-------- */
+
+.chat__body {
+    /* background-color: black; */
+    flex: 1;
+    background-image: url('https://cutewallpaper.org/21/whatsapp-background-wallpapers/Whatsapp-background-wallpaper-android-3-A-Background-Download.jpg');
+    padding: 25px 10px;
+    overflow-y: auto;
+}
+
+.chat__body .chat__message {
+    position: relative;
+    background-color: white;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.chat__name {
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    right: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    width: max-content;
+}
+
+.chat__time {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.chat__receiver {
+    background-color: #d6f8c6 !important;
+    margin-left: auto;
+}
+
+/* -------> Css of Chat Footer <------- */
+
+.chat__footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat__footer svg {
+    padding: 4px;
+    color: gray;
+}
+
+
+.chat__footer form {
+    flex: 1;
+}
+
+.chat__footer form input[type = 'text'] {
+    border: 0;
+    height: 30px;
+    outline: 0;
+    width: 100%;
+}
+
+.chat__footer form input[type = 'submit'] {
+    display: none;
+}
